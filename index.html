@@ -4,14 +4,48 @@
     <meta charset="UTF-8">
     <title>Quiz</title>
     <link rel="stylesheet" href="css/app.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
     <script src="bower_components/angular/angular.js"></script>
 </head>
-<body>
+<body ng-app="app">
+
+<div class="question">
+    <div class="problem row">
+        <div class="large-12 columns">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam gravida quam sed
+                auctor aliquet.
+                Sed ipsum libero, iaculis eu posuere non, scelerisque eget lectus.
+            </p>
+        </div>
+    </div>
+    <div class="choices row">
+        <form class="large-12 column">
+            <label for="1">
+                <input type="radio" id="1"
+                       name="answers">
+                <span>Fusce commodo tellus a ultrices tempus.</span>
+            </label>
+            <label for="2">
+                <input type="radio" id="2" name="answers">
+                <span>Morbi id commodo metus</span>
+            </label>
+            <label for="3">
+                <input type="radio" id="3" name="answers">
+                <span>Quisque fermentum in nibh et iaculis.</span>
+            </label>
+            <label for="4">
+                <input type="radio" id="4" name="answers">
+                <span>Proin vitae accumsan ex, id varius nisi.</span>
+            </label>
+        </form>
+    </div>
+</div>
 
 
 <script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="bower_components/foundation/js/foundation.js"></script>
-<script src="js/app.js"></script>
+<script>$(document).foundation();</script>
 <script src="quiz.js"></script>
 </body>
 </html>
